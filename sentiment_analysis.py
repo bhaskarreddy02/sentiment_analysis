@@ -121,10 +121,10 @@ def preprocess_dataset(df):
 
 def vectorize_text(X_train, X_test):
    
-    # Create vectorizer (max_features limits vocabulary size for efficiency)
+    # Creating vectorizer
     vectorizer = TfidfVectorizer(max_features=100, lowercase=True)
     
-    # Fit on training data and transform both train and test
+    # Fitting on training data and transforming both train and test
     X_train_vec = vectorizer.fit_transform(X_train)
     X_test_vec = vectorizer.transform(X_test)
     
