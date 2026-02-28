@@ -144,7 +144,7 @@ def train_sentiment_model(X_train_vec, y_train):
     model.fit(X_train_vec, y_train)
     
     print("\n✓ Model training completed")
-    print(f"  Algorithm: Logistic Regression")
+    print(f"  Algorithm now on running: Logistic Regression")
     
     return model
 
